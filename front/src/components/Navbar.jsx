@@ -66,16 +66,20 @@ export default function NavBar() {
             <Link href="/">
                 <Heading>Movie-findr</Heading>
             </Link>
-            <Link href="/profile">
-                <Heading as="h4" size="md" ml={10} isTruncated>
-                    Profile
-                </Heading>
-            </Link>
-            <Link href="/movies">
-                <Heading as="h4" size="md" ml={10} isTruncated>
-                    Movies
-                </Heading>
-            </Link>
+            {user?.email ? <>
+
+                <Link href="/profile">
+                    <Heading as="h4" size="md" ml={10} isTruncated>
+                        Profile
+                    </Heading>
+                </Link>
+                <Link href="/movies">
+                    <Heading as="h4" size="md" ml={10} isTruncated>
+                        Movies
+                    </Heading>
+                </Link>
+            </> : <></>}
+
             {user?.email ? <>
                 <HStack position="absolute" right="3%">
                     <Avatar size='md' name={user?.firstName} src={user?.picture} />

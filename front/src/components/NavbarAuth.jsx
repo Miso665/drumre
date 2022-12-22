@@ -63,16 +63,6 @@ export default function NavbarAuth() {
             <Link href="/">
                 <Heading>Movie-findr</Heading>
             </Link>
-            <Link href="/profile">
-                <Heading as="h4" size="md" ml={10} isTruncated>
-                    Profile
-                </Heading>
-            </Link>
-            <Link href="/movies">
-                <Heading as="h4" size="md" ml={10} isTruncated>
-                    Movies
-                </Heading>
-            </Link>
             <HStack position="absolute" right="3%">
 
                 <Button onClick={back}>

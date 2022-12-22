@@ -9,7 +9,7 @@ const Landing = () => {
       <NavBar />
       <br />
       <Center>
-        <Heading>Sign up, login, or browse movies...</Heading>
+        <Heading>Sign up or login to browse movies...</Heading>
       </Center>
     </>
   );

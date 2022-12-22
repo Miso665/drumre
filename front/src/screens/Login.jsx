@@ -50,7 +50,7 @@ const Login = () => {
           alignItems: "center",
         }}
       >
-        {error && <p style={{ color: "red" }}>{error}</p>}
+        {error && <Heading size="md" style={{ color: "red" }}>{error}</Heading>}
         {loading ? <div>Loading....</div> : <div id="loginDiv"></div>}
       </main>
       <footer></footer>
